@@ -1,0 +1,194 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bantuan Sosial 2026</title>
+
+<style>
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  padding:20px;
+  background:#f1f4f7;
+  font-family:Arial,sans-serif;
+  color:#17202a;
+}
+
+.container{
+  max-width:400px;
+  margin:auto;
+}
+
+.title{
+  text-align:center;
+  margin:10px 0 22px;
+}
+
+.title h1{
+  margin:0;
+  font-size:30px;
+  font-weight:900;
+  color:#087443;
+}
+
+.title p{
+  margin:7px 0 0;
+  font-size:12px;
+  color:#7b8794;
+}
+
+.card{
+  background:#fff;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.demo{
+  text-align:center;
+  font-size:10px;
+  color:#856404;
+  background:#fff3cd;
+  padding:8px;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+
+.field{
+  margin-bottom:15px;
+}
+
+.field label{
+  display:block;
+  font-size:12px;
+  color:#65727e;
+  margin-bottom:7px;
+  font-weight:bold;
+}
+
+.field input{
+  width:100%;
+  padding:14px;
+  border:1px solid #dfe5e9;
+  border-radius:12px;
+  outline:none;
+  font-size:15px;
+}
+
+.field input:focus{
+  border-color:#087443;
+  box-shadow:0 0 0 3px rgba(8,116,67,.1);
+}
+
+.amount{
+  color:#087443;
+  font-weight:bold;
+}
+
+button{
+  width:100%;
+  border:0;
+  padding:17px;
+  margin-top:5px;
+  border-radius:14px;
+  background:#087443;
+  color:#fff;
+  font-size:15px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+button:active{
+  transform:scale(.98);
+}
+
+.note{
+  margin-top:12px;
+  text-align:center;
+  color:#89939d;
+  font-size:10px;
+  line-height:1.5;
+}
+
+.link-info{
+  text-align:center;
+  margin-top:10px;
+  font-size:10px;
+  color:#087443;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="title">
+    <h1>Bantuan Sosial 2026</h1>
+    <p>Informasi dan penawaran</p>
+  </div>
+
+  <div class="card">
+
+    <div class="field">
+      <label for="nama">Nama</label>
+      <input
+        type="text"
+        id="nama"
+        placeholder="Masukkan nama"
+      >
+    </div>
+
+    <div class="field">
+      <label for="nomor">No.Hp</label>
+      <input
+        type="text"
+        id="nomor"
+        placeholder="Masukkan nomor"
+      >
+    </div>
+
+    <div class="field">
+      <label for="nominal">Nominal</label>
+      <input
+        type="text"
+        id="nominal"
+        class="amount"
+        placeholder="Contoh: Rp 750.000"
+      >
+    </div>
+
+    <button
+      type="button"
+      onclick="bukaShopee()"
+    >
+     Ambil Sekarang
+    </button>
+
+    </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function bukaShopee(){
+
+  window.open(
+    "https://s.shopee.co.id/7ptky62L3g",
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+}
+</script>
+
+</body>
+</html>
